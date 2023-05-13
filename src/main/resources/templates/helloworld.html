@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:p="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Thymeleaf Demo</title>
+
+    <!-- reference CSS file -->
+    <link rel="stylesheet" th:href="@{/css/demo.css}"/>
 </head>
 <body>
+
+<p th:text="'Timeout on the server is ' + ${theDate}" class="funny">
 
 </body>
 </html>
